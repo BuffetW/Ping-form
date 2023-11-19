@@ -1,0 +1,155 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Libre Franklin", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block-start: 60px;
+  padding-inline: 30px;
+}
+header {
+  text-align: center;
+}
+.logo {
+  width: 55px;
+  margin-block: 25px;
+
+  @media (width >= 700px) {
+    width: 84px;
+  }
+}
+h1 {
+  font-size: 22px;
+  font-weight: 400;
+
+  color: hsl(0, 0%, 59%, 70%);
+
+  @media (width >= 700px) {
+    font-size: 46px;
+    margin-block: 20px;
+  }
+}
+strong {
+  color: hsl(209, 33%, 12%);
+}
+p {
+  font-size: 12px;
+  font-weight: 300px;
+  color: hsl(209, 33%, 12%);
+
+  @media (width >= 700px) {
+    font-size: 21px;
+    margin-block: 0px;
+  }
+}
+form {
+  width: 90%;
+  padding-block: 20px;
+  margin-block-end: 50px;
+
+  @media (width >= 700px) {
+    width: 50%;
+    padding-block: 40px;
+    margin-block-end: 40px;
+  }
+}
+input {
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid hsl(223, 100%, 88%);
+
+  padding: 11px;
+  margin-block-end: 8px;
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+
+  @media (width >= 700px) {
+    width: 64%;
+    margin-inline-end: 10px;
+    padding: 18px;
+    font-size: 16px;
+  }
+}
+input.error {
+  border-color: hsl(354, 100%, 66%);
+}
+input.error::placeholder {
+  border-color: hsl(354, 100%, 66%);
+}
+
+button {
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  width: 100%;
+  border-radius: 50px;
+  padding: 11px;
+  font-weight: 500;
+  cursor: pointer;
+
+  @media (width >= 700px) {
+    width: 30%;
+    padding: 18px;
+    font-size: 16px;
+  }
+}
+button:hover {
+  background-color: hsl(223, 87%, 63%, 90%);
+}
+.img {
+  width: 100%;
+  margin-block-end: 62px;
+  @media (width >= 700px) {
+    width: 48%;
+    margin-block-end: 8px;
+  }
+}
+footer {
+  color: hsl(0, 0%, 59%, 70%);
+  padding-block: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block-start: 30px;
+  font-size: 11px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-block: 28px;
+}
+.socialSVG {
+  width: 28px;
+  height: 28px;
+  border: 1px solid hsl(209, 33%, 12%, 20%);
+  border-radius: 50%;
+  padding: 6px;
+  color: hsl(223, 100%, 88%);
+}
+
+li svg:hover {
+  background-color: hsl(223, 87%, 63%);
+  fill: white;
+}
+
+ul {
+  padding: 0px;
+}
